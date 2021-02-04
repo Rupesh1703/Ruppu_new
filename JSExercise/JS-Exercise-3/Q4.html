@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Well come</title>
+</head>
+<body>
+    <script>
+        let table_Create = (rows, column) => {
+            let table_one = document.createElement('table');
+            table_one.id = "table_id";
+            table_one.border = "2%";
+            document.body.append(table_one);
+            for (let i = 0; i < rows; ++i) {
+                let rows_one = table_one.insertRow(i);
+                for (let j = 0; j < column; ++j) {
+                    let column_one = rows_one.insertCell(j);
+                    let input = prompt(`Enter Row No-${i} Enter Column No-${j}`)
+                    column_one.innerHTML = input;
+                }
+            }
+        };
+        let rows = +prompt("No of rows", );
+        let column = +prompt("No of columns",);
+        if (isFinite(rows))
+        {
+                if(isFinite(column))
+        {
+                if(rows > 0)
+                {
+                  if( column > 0)
+                  {
+                   table_Create(rows, column);
+                  }
+                }
+        }
+        }
+        else {
+            alert("Not found");
+        }
+    </script>
+</body>
+</html>

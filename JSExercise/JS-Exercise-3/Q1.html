@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Well come</title>  
+</head>
+<body >
+
+
+<script>
+
+    const email=prompt('Enter email')
+    let splitedEmail = email.split("@");
+const Split_one = splitedEmail[0];
+let splitedEmail1 = Split_one.split("");
+let splitedEmail1Length = splitedEmail1.length;
+let starredEmail = null;
+for (let i = 2; i < splitedEmail1Length - 1; i++) {
+  starredEmail = splitedEmail1.splice(i, 1, "*");
+}
+let newEmail = splitedEmail1.join("");
+let joinMail = newEmail + "@" + splitedEmail[1].toString();
+
+
+
+alert(joinMail)
+</script>
+</body>
+</html>

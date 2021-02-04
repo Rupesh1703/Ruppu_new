@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Class</title> 
+        <script src= "./jquery-3.5.1.min.js"> 
+        </script> 
+        <script> 
+            $("document").ready(function () { 
+                //$("p").addClass("rapid_font_color");
+                $("p:last").addClass("rapid_background rapid_font_color")
+
+                }); 
+       
+            </script> 
+            <style>
+                p {
+             margin: 8px;
+                font-size: 16px;
+  }
+.rapid_font_color{
+    color: blue;
+  }
+.rapid_background {
+    background: orange;
+  }
+</style>
+
+       
+    </head> 
+    <body> 
+        <p>Java</p>
+        <p>Paython</p>
+        <p>JavaScript</p>
+    
+    </body> 
+  
+    
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="./jquery-3.5.1.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Title find</title>
+        <script>
+             $("document").ready(function () { 
+            $('#button').click(function(){ 
+let AddString = $( "h3" ).attr( "title" );
+$("#id1").text( AddString );
+});
+             })
+        </script>
+          </head>
+          <body>
+          <p>Hello we are good <h3 title="And Happy"></h3></p>
+          <p id="id1"></p>
+          <button id="button">Click Me</button>
+          </body>
+</html>

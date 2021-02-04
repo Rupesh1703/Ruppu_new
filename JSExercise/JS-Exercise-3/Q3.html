@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Well come</title>  
+</head>
+<body >
+<h2>Inesrt Email</h2>
+<form name="email"> 
+<input type='text' name='text_one'/>
+<button class="Submit" onclick="checkEmail(document.email.text_one)">click me</button>
+</form>
+
+<script>
+function checkEmail(email) {
+var checkCode = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+// if (email.value.match(checkCode)) {
+//   alert("Valid email");
+// } else {
+//   alert("Invalid email");
+// }
+return (email.value.match(checkCode)?alert("Valid email"):alert("Invalid email"))
+}
+</script>
+</body>
+</html>

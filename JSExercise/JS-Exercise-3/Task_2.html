@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Well come</title>
+  </head>
+  <body>
+    <script>
+        let Chess = [];
+        let Cricket = [];
+        let Football = [];
+        let Table_tennis = [];
+        let players = [{
+            Name: 'Rupesh' ,
+            Sports: ['Chess', 'Cricket','Football','Table-Tennis']
+        },
+        {
+            Name: 'Pranjal' ,
+            Sports: ['Cricket', 'Football']
+        },
+        {
+            Name: 'Mohit' ,
+            Sports: ['Table-Tennis', 'Football']
+        }]
+        
+        players.forEach((players_One) => {
+         players_One.Sports.forEach((sports_one) => {
+                if(sports_one === `Chess`){
+                    Chess.push(players_One.Name);
+                }
+               else if(sports_one === `Cricket`){
+                    Cricket.push(players_One.Name);
+                }
+               else if(sports_one === `Football`){
+                    Football.push(players_One.Name);
+                }
+               else{
+                    Table_tennis.push(players_One.Name);
+                }
+            })
+        })
+        //alert({chess:Chess});
+        // console.log("Chess:"+Chess);
+        // console.log("Cricket:"+Cricket);
+        // console.log("Football:"+Football);
+        // console.log("Table-Tennis:"+Table_tennis)
+        document.write(`<p>Chess: [${Chess}]</p>`);
+        document.write(`<p>Cricket: [${Cricket}]</p>`);
+        document.write(`<p>Football: [${Football}]</p>`);
+        document.write(`<p>Table-Tennis: [${Table_tennis}]</p>`); 
+    </script> 
+  </body>
+</html>
